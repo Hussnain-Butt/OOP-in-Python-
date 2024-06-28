@@ -6,10 +6,14 @@ class Complex():
     def showNum(self):
         print(self.real,"i +",self.img , "j ")
     
+    # Addition 
+    
     def __add__(self,num2):
      numReal = self.real + num2.real
      numImg =  self.img+ num2.img
      return Complex(numReal , numImg)
+ 
+    # Substraction 
  
     def __sub__(self,num2):
       numReal = self.real - num2.real
